@@ -38,8 +38,6 @@ namespace CRUD_Operation_MVC_Mongodb.Controllers
         {
             return  View(await employeeRepositroy.GetAllEmployees());
         }
-
-
         public async Task<IActionResult>DeleteEmployee(string id)
         {
             var restult = await employeeRepositroy.DeleteEmployeeId(id);
